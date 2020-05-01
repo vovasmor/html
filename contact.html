@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg">
     <ul class="menu">
         <li><a href="index.html">Главная страница</a></li>
         <li><a href="contact.html">Контакты</a><br></li>
@@ -17,28 +18,28 @@
     <form action="">
         <fieldset>
             <legend>
-                <h3>Напишите нам</h3>
+                <h3 class="write-to-us">Напишите нам</h3>
             </legend>
-            <input type="text" placeholder="Ваше имя">
-            <input type="submit"><br>
-            <input type="text" placeholder="Ваш E-mail">
-            <input type="reset"><br>
-            <input type="text" size="54" placeholder="Тема"><br>
-            <textarea cols="50" rows="7"></textarea><br>
+            <input class="input" type="text" placeholder="Ваше имя">
+            <input class="button" type="submit"><br>
+            <input class="input" type="text" placeholder="Ваш E-mail">
+            <input class="button" type="reset"><br>
+            <input class="input" type="text" size="54" placeholder="Тема"><br>
+            <textarea class="textarea" cols="50" rows="7" placeholder="Текст письма"></textarea><br>
         </fieldset>
     </form>
-    <h3>Адрес</h3>
-    <ul>
+    <h3 class="heading">Адрес</h3>
+    <ul class="address">
         <li>Время работы: с 09:00 до 21:00</li>
         <li>Телефон: 8(800)225-35-40</li>
         <li>г. Санкт-Петербург, ул. Пушкина, д. 12</li>
-        <li>analog_pustoti@mail.ru</li>
+        <li><a class="E-mail"href="#">analog_pustoti@mail.ru</a></li>
     </ul>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b579da7a2d5bf5c8dfe11e0a4462d9635e467290658b097d300806eaec5a563&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     <hr>
     <hr>
     <footer>
-        <p>&copy;Все права защищены <a href="https:/geekbrains.ru" target="_blank">Geekbranis</a></p>
+        <p>&copy;Все права защищены <a class="link" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
     </footer>
 </body>
 
