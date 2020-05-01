@@ -1,0 +1,131 @@
+.bg {
+    background-color: #f8f8f8;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    position: relative;
+    line-height: 1;
+    text-decoration: none;
+    color: #3B83BD;
+    font: 19px/25px sans-serif;
+}
+
+.link {
+    position: relative;
+    line-height: 1;
+    text-decoration: none;
+    color: #3B83BD;
+    font: 19px/25px sans-serif;
+}
+
+.book-link,
+.E-mail {
+    position: relative;
+    line-height: 1;
+    text-decoration: none;
+    color: #3B83BD;
+    font: 19px/25px sans-serif;
+}
+
+a:not(.book-photo):not(.book-photo-link):after {
+    display: block;
+	position: absolute;
+    cursor: pointer;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #3B83BD; 
+    content: "";
+	transition: width 0.3s ease-out;
+}
+
+a:not(.book-photo):not(.book-photo-link):hover:after,
+a:not(.book-photo):not(.book-photo-link):focus:after {
+    width: 100%;
+}
+
+.book-photo {
+    outline: 2px solid #000;
+}
+
+.heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.short-desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailed-desc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    color: #6e6e6e;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    background: url(catalog/img/faq_list5_2.png) no-repeat 0 4px;
+    padding-left: 24px;
+}
+
+input[type="text"]::placeholder {
+    color: #484343;
+}
+
+.input,
+.button,
+.textarea {
+    border-radius: 3px;
+    width: 200px;
+    height: 35px;
+    border: 1px solid;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0 10px;
+    cursor: text;  
+}
+
+.button {
+    width: 130px;
+    cursor: pointer;
+}
+
+.textarea {
+    width: 330px;
+    height: 100px;
+}
+
+.address,
+.E-mail {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.write-to-us {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
