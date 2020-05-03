@@ -1,27 +1,11 @@
+/*Фон на страницах*/
 .bg {
     background-color: #f8f8f8;
 }
 
-.menu li {
-    list-style-type: none;
-}
-
-.menu li a {
-    position: relative;
-    line-height: 1;
-    text-decoration: none;
-    color: #3B83BD;
-    font: 19px/25px sans-serif;
-}
-
-.link {
-    position: relative;
-    line-height: 1;
-    text-decoration: none;
-    color: #3B83BD;
-    font: 19px/25px sans-serif;
-}
-
+/*Стиль ссылок*/
+.menu td a,
+.geekbrains,
 .book-link,
 .E-mail {
     position: relative;
@@ -31,27 +15,59 @@
     font: 19px/25px sans-serif;
 }
 
-a:not(.book-photo):not(.book-photo-link):after {
-    display: block;
-	position: absolute;
-    cursor: pointer;
-	left: 0; 
-	width: 0;
-	height: 2px; 
-	background-color: #3B83BD; 
-    content: "";
-	transition: width 0.3s ease-out;
+/*Смена цвета ссылки при наведении*/
+.menu td a:hover,
+a:hover {
+    color: #0b4573;
 }
 
-a:not(.book-photo):not(.book-photo-link):hover:after,
-a:not(.book-photo):not(.book-photo-link):focus:after {
+/*Подчёркивание ссылки при наведении*/
+.menu td a:after,
+.geekbrains:after {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3B83BD;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+/*Подчёркивание ссылки при наведении полностью*/
+.menu td a:not(.logo-photo-link):hover:after,
+.menu td a:not(.logo-photo-link):focus:after,
+.geekbrains:hover:after,
+.geekbrains:focus:after {
     width: 100%;
 }
 
+/*Рамка изображения в разделе просмотра товара*/
 .book-photo {
     outline: 2px solid #000;
 }
 
+/*При наведении на изображения в разделе просмотра товара рамка исчезает*/
+.book-photo:hover {
+    outline: none;
+}
+
+/*Размер изображения в каталоге*/
+.book-photo-link img {
+    height: 250px;
+}
+
+/*Таблица в каталоге. Изменить.*/
+.catalog-table,
+.catalog-table tr td {
+    height: 100px;
+    width: 150px;
+    border-spacing: 140px 0;
+    vertical-align: top;
+}
+
+/*Заголовки (Краткое описание товара, Характеристики, Подробное описание товара)*/
 .heading {
     color: black;
     font-size: 18px;
@@ -59,6 +75,14 @@ a:not(.book-photo):not(.book-photo-link):focus:after {
     background: #eaeaea;
 }
 
+/*Первая буква первого слова на странице просмотра товара*/
+.short-desc:first-letter,
+.detailed-desc:first-letter {
+    font-family: "Times New Roman";
+    font-size: 200%;
+}
+
+/*Текст краткого описания товара*/
 .short-desc {
     color: #707070;
     font-size: 14px;
@@ -66,6 +90,7 @@ a:not(.book-photo):not(.book-photo-link):focus:after {
     line-height: 16px;
 }
 
+/*Текст подробного описания товара*/
 .detailed-desc {
     color: #484343;
     font-size: 16px;
@@ -74,46 +99,86 @@ a:not(.book-photo):not(.book-photo-link):focus:after {
     text-align: left;
 }
 
-.list {
-    list-style-type: none;
+/*На странице просмотра товара в качестве маркеров свое изображение.*/
+.list tr {
+    background: url(catalog/img/faq_list5_2.png) no-repeat 0 4px;
 }
 
-.list li {
+/*Таблица краткого описания товара*/
+.list tr th,
+.list tr td {
     color: #6e6e6e;
     font-size: 15px;
     font-weight: 500;
     line-height: 28px;
-    background: url(catalog/img/faq_list5_2.png) no-repeat 0 4px;
     padding-left: 24px;
+    text-align: left;
 }
 
-input[type="text"]::placeholder {
+/*Таблица с "Напишите нам" и картой*/
+.form-table,
+.form-table tr td {
+    width: 1500px;
+}
+
+/*Расположение карты внутри таблицы*/
+.map {
+    padding-top: 27px;
+    padding-left: 10%;
+}
+
+/*При вводе текста в поле Email на странице контактной информации меняет цвет текста и поля*/
+#email:focus {
+    color: #8bc53f;
+    outline: 1px solid #8bc53f;
+}
+
+/*Задает стиль для текста внутри полей input и textarea*/
+input[type="text"]::placeholder,
+textarea::placeholder {
     color: #484343;
+    font: 14px/35px sans-serif;
 }
 
+/*Выравнивает поля формы внутри таблицы*/
+.input-table tr td {
+    height: 50px;
+    text-align: center;
+}
+
+/*Задает стиль для текста и курсора, введенного пользователем внутри полей input и textarea*/
 .input,
 .button,
-.textarea {
+.textarea,
+.input-tema {
     border-radius: 3px;
-    width: 200px;
-    height: 35px;
+    width: 71%;
+    height: 80%;
     border: 1px solid;
-    font-size: 14px;
-    line-height: 35px;
+    font: 14px/35px sans-serif;
     padding: 0 10px;
-    cursor: text;  
+    cursor: text;
+    text-transform: capitalize;
 }
 
+/*Задает стиль курсора для кнопок*/
 .button {
-    width: 130px;
     cursor: pointer;
+    
 }
 
+/*Задает ширину и высоту для поля textarea*/
 .textarea {
-    width: 330px;
-    height: 100px;
+    width: 86%;
+    height: 200px;
 }
 
+/*Задает ширину для поля с текстом темы*/
+.input-tema {
+    width: 86%;
+}
+
+/*Задает стиль для листа с адресом*/
 .address,
 .E-mail {
     list-style-type: none;
@@ -122,10 +187,24 @@ input[type="text"]::placeholder {
     line-height: 28px;
 }
 
+/*Отдельный стиль текста для "Напишите нам"*/
 .write-to-us {
     color: black;
     font-size: 18px;
     font-weight: 400;
 }
 
+/*Удалить*/
 
+.table-test,
+.table-test tr th,
+.table-test tr td {
+    border: 1px solid;
+    height: 100px;
+    width: 400px;
+    text-align: center;
+}
+
+.table-test {
+    border-collapse: collapse;
+}
