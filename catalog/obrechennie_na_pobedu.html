@@ -4,59 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Книга - "Обреченные на победу" Джон Скальци</title>
-    <link type="text/css" rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
-    <header>
-        <table class="menu">
-            <tr>
-                <td rowspan="4" class="logo"><a class="logo-photo-link" href="../index.html"><img src="img/bg-4.png" height="150px" alt="logo"></a></td>
-                <td><a href="../index.html">Главная страница</a></td>
-            </tr>
-            <tr>
-                <td><a href="../contact.html">Контакты</a></td>
-            </tr>
-            <tr>
-                <td><a href="../catalog.html">Каталог</a></td>
-            </tr>
-            <tr>
-                <td><a href="../table.html">Страница с таблицей</a></td>
-            </tr>
-        </table>
-    </header>
-    <hr>
-    <main>
-        <h1 class="book-name">Обреченные на победу</h1>
-        <a class="book-photo" href="img/obrechennie_na_pobedu.jpg" target="_blank"><img src="img/obrechennie_na_pobedu.jpg" height="350" alt="Книга"></a>
-        <h3 class="heading">Описание товара</h3>
-        <p class="short-desc">Роман Джона Скальци пользуется огромной популярностью в США, его ставят в один ряд с таким классическим произведением мировой фантастики, как «Звездный десант» Р. Э. Хайнлайна.</p>
-        <h3 class="heading">Характеристики товара</h3>
-        <table class="list">
-            <tr>
-                <th>Год издания:</th>
-                <td>2006</td>
-            </tr>
-            <tr>
-                <th>Кол-во страниц:</th>
-                <td>432</td>
-            </tr>
-            <tr>
-                <th>Формат:</th>
-                <td>20,6 x 13,3 x 2,7</td>
-            </tr>
-            <tr>
-                <th>Тип обложки:</th>
-                <td>Твердая глянцевая</td>
-            </tr>
-        </table>
-        <h3 class="heading">Подробное описание товара</h3>
-        <p class="detailed-desc">Мир будущего Земли не&nbsp;так прекрасен, как хотелось&nbsp;бы уставшему от&nbsp;нынешних проблем человечеству. Колонизация космоса оборачивается для землян полосой жестоких затяжных войн с&nbsp;обитателями&nbsp;других галактик. Существует даже особая армия&nbsp;&mdash; Силы самообороны колоний,&nbsp;&mdash; куда вербуют исключительно пожилых людей, обещая вернуть им&nbsp;молодость. Правда это или лишь уловка для простаков,&nbsp;&mdash; никто толком сказать не&nbsp;может, потому что солдаты этой наемной армии никогда не&nbsp;возвращаются на&nbsp;Землю. Джон Перри, один из&nbsp;таких наемников, подписывает контракт и&nbsp;почти сразу&nbsp;же оказывается втянутым в&nbsp;страшную круговерть войны. Во&nbsp;время схватки за&nbsp;планету Корал, едва не&nbsp;стоившей Джону жизни, он&nbsp;встречает в&nbsp;Бригаде призраков&nbsp;&mdash; такое имя носит звездный спецназ,&nbsp;&mdash; свою собственную жену, которую похоронил перед тем, как пойти в&nbsp;наемники. Эта минута и&nbsp;явилась новой точкой отсчета его круто изменившейся жизни.</p>
-    </main>
-    <hr>
-    <footer>
-        <p>&copy;Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
-    </footer>
+<body class="bg">
+    <div class="content">
+        <div class="header">
+            <div class="header_l">
+                <div class="header_logo">
+                    <a class="logo-photo-link" href="../index.html"><img src="img/logo.png" height="62px" alt="logo"></a>
+                </div>
+                <div class="header_menu">
+                    <ul class="header_menu_list">
+                        <li class="header_menu_item">
+                            <a href="../catalog.html">Каталог</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="../contact.html">Контакты</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="../index.html">Главная</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_page">
+            <div class="mainer">
+                <div class="product_main">
+                    <div class="product">
+                        <div class="product_photo_buy">
+                            <div class="product_photo">
+                                <a class="book-photo" href="img/obrechennie_na_pobedu.jpg" target="_blank"><img src="img/obrechennie_na_pobedu.jpg" alt="Книга"></a>
+                            </div>
+                            <div class="product_buy">
+                                <button type="button" class="buy_button">
+                                    <span>Купить</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <div class="product_name">
+                                <h1 class="book_name">Обреченные на победу</h1>
+                            </div>
+                            <div class="product_short_desc">
+                                <p class="short_desc">Роман Джона Скальци пользуется огромной популярностью в&nbsp;США, его ставят в&nbsp;один ряд с&nbsp;таким классическим произведением мировой фантастики, как &laquo;Звездный десант&raquo; <nobr>Р. Э. Хайнлайна</nobr>.</p>
+                            </div>
+                            <div class="product_properties">
+                                <div class="product_props">
+                                    <div class="product_prop">
+                                        <div class="product_title">Год издания:</div>
+                                        <div class="product_value">2006</div>
+                                    </div>
+                                    <div class="product_prop">
+                                        <div class="product_title">Кол-во страниц:</div>
+                                        <div class="product_value">432</div>
+                                    </div>
+                                    <div class="product_prop">
+                                        <div class="product_title">Формат:</div>
+                                        <div class="product_value">20,6 x 13,3 x 2,7</div>
+                                    </div>
+                                    <div class="product_prop">
+                                        <div class="product_title">Тип обложки:</div>
+                                        <div class="product_value">твердая глянцевая</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_desc">
+                            <h3 class="heading">Аннотация</h3>
+                            <p class="detailed_desc">Мир будущего Земли не&nbsp;так прекрасен, как хотелось&nbsp;бы уставшему от&nbsp;нынешних проблем человечеству. Колонизация космоса оборачивается для землян полосой жестоких затяжных войн с&nbsp;обитателями&nbsp;других галактик. Существует даже особая армия&nbsp;&mdash; Силы самообороны колоний,&nbsp;&mdash; куда вербуют исключительно пожилых людей, обещая вернуть им&nbsp;молодость. Правда это или лишь уловка для простаков,&nbsp;&mdash; никто толком сказать не&nbsp;может, потому что солдаты этой наемной армии никогда не&nbsp;возвращаются на&nbsp;Землю. Джон Перри, один из&nbsp;таких наемников, подписывает контракт и&nbsp;почти сразу&nbsp;же оказывается втянутым в&nbsp;страшную круговерть войны. Во&nbsp;время схватки за&nbsp;планету Корал, едва не&nbsp;стоившей Джону жизни, он&nbsp;встречает в&nbsp;Бригаде призраков&nbsp;&mdash; такое имя носит звездный спецназ,&nbsp;&mdash; свою собственную жену, которую похоронил перед тем, как пойти в&nbsp;наемники. Эта минута и&nbsp;явилась новой точкой отсчета его круто изменившейся жизни.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <p>&copy; Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
