@@ -4,49 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg">
-    <header>
-        <table class="menu">
-            <tr>
-                <td rowspan="4" class="logo"><a class="logo-photo-link" href="index.html"><img src="catalog/img/bg-4.png" height="150px" alt="logo"></a></td>
-                <td><a href="index.html">Главная страница</a></td>
-            </tr>
-            <tr>
-                <td><a href="contact.html">Контакты</a></td>
-            </tr>
-            <tr>
-                <td><a href="catalog.html">Каталог</a></td>
-            </tr>
-            <tr>
-                <td><a href="table.html">Страница с таблицей</a></td>
-            </tr>
-        </table>
-    </header>
-    <hr>
-    <h1>Каталог</h1>
-    <main>
-        <table class="catalog-table">
-            <tr>
-                <td><a class="book-photo-link" href="catalog/Dumai_medlenno_kahneman.html" title="Думай медленно... Решай быстро. Даниэль Канеман"><img src="catalog/img/Dumai_medlenno.jpg" alt="Думай медленно… решай быстро. Даниэль Канеман"></a></td>
-                <td><a class="book-photo-link" href="catalog/lolita_nabokov.html" title="Лолита. Владимир Набоков"><img src="catalog/img/lolita.jpg" alt="Лолита. Владимир Набоков"></a></td>
-                <td><a class="book-photo-link" href="catalog/Vi_konechno_shutite_mr_feynman.html" title="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон"><img src="catalog/img/Vi_konechno_shutite_mr_feynman.jpg" alt="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон"></a></td>
-                <td><a class="book-photo-link" href="catalog/obrechennie_na_pobedu.html" title="Обреченные на победу. Джон Скальци"><img src="catalog/img/obrechennie_na_pobedu.jpg" alt="Обреченные на победу. Джон Скальци"></a></td>
-            </tr>
-            <tr>
-                <td><a class="book-link" href="catalog/Dumai_medlenno_kahneman.html" title="Думай медленно... Решай быстро. Даниэль Канеман">Думай медленно... Решай быстро</a></td>
-                <td><a class="book-link" href="catalog/lolita_nabokov.html" title="Лолита. Владимир Набоков">Лолита</a></td>
-                <td><a class="book-link" href="catalog/Vi_konechno_shutite_mr_feynman.html" title="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон">Вы, конечно, шутите, мистер Фейнман!</a></td>
-                <td><a class="book-link" href="catalog/obrechennie_na_pobedu.html" title="Обреченные на победу. Джон Скальци">Обреченные на победу</a></td>
-            </tr>
-        </table>
-    </main>
-    <hr>
-    <footer>
-        <p>&copy;Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
-    </footer>
+    <div class="content">
+        <div class="header">
+            <div class="header_l">
+                <div class="header_logo">
+                    <a class="logo-photo-link" href="index.html"><img src="catalog/img/logo.png" height="62px" alt="logo"></a>
+                </div>
+                <div class="header_menu">
+                    <ul class="header_menu_list">
+                        <li class="header_menu_item">
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="index.html">Главная</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_page">
+            <div class="mainer">
+                <div class="catalog_list">
+                    <div class="books_card">
+                        <a class="book_photo_link" href="catalog/Dumai_medlenno_kahneman.html" title="Думай медленно... Решай быстро. Даниэль Канеман"><img src="catalog/img/Dumai_medlenno.jpg" alt="Думай медленно… решай быстро. Даниэль Канеман"></a>
+                        <div class="book_name">
+                            <a class="book_link" href="catalog/Dumai_medlenno_kahneman.html" title="Думай медленно... Решай быстро. Даниэль Канеман">Думай медленно... Решай быстро</a>
+                        </div>
+                        <div class="buy">
+                            <button type="button" class="buy_button">
+                                <span>Купить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="books_card">
+                        <a class="book_photo_link" href="catalog/lolita_nabokov.html" title="Лолита. Владимир Набоков"><img src="catalog/img/lolita.jpg" alt="Лолита. Владимир Набоков"></a>
+                        <div class="book_name">
+                            <a class="book_link" href="catalog/lolita_nabokov.html" title="Лолита. Владимир Набоков">Лолита</a>
+                        </div>
+                        <div class="buy">
+                            <button type="button" class="buy_button">
+                                <span>Купить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="books_card">
+                        <a class="book_photo_link" href="catalog/Vi_konechno_shutite_mr_feynman.html" title="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон"><img src="catalog/img/Vi_konechno_shutite_mr_feynman.jpg" alt="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон"></a>
+                        <div class="book_name">
+                            <a class="book_link" href="catalog/Vi_konechno_shutite_mr_feynman.html" title="Вы, конечно, шутите, мистер Фейнман! Ричард Фейнман, Ральф Лейтон">Вы, конечно, шутите, мистер Фейнман!</a>
+                        </div>
+                        <div class="buy">
+                            <button type="button" class="buy_button">
+                                <span>Купить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="books_card">
+                        <a class="book_photo_link" href="catalog/obrechennie_na_pobedu.html" title="Обреченные на победу. Джон Скальци"><img src="catalog/img/obrechennie_na_pobedu.jpg" alt="Обреченные на победу. Джон Скальци"></a>
+                        <div class="book_name">
+                            <a class="book_link" href="catalog/obrechennie_na_pobedu.html" title="Обреченные на победу. Джон Скальци">Обреченные на победу</a>
+                        </div>
+                        <div class="buy">
+                            <button type="button" class="buy_button">
+                                <span>Купить</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <p>&copy; Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -3,75 +3,89 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Контакты</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg">
-    <header>
-        <table class="menu">
-            <tr>
-                <td rowspan="4" class="logo"><a class="logo-photo-link" href="index.html"><img src="catalog/img/bg-4.png" height="150px" alt="logo"></a></td>
-                <td><a href="index.html">Главная страница</a></td>
-            </tr>
-            <tr>
-                <td><a href="contact.html">Контакты</a></td>
-            </tr>
-            <tr>
-                <td><a href="catalog.html">Каталог</a></td>
-            </tr>
-            <tr>
-                <td><a href="table.html">Страница с таблицей</a></td>
-            </tr>
-        </table>
-    </header>
-    <hr>
-    <h1>Контакты</h1>
-    <main>
-        <table class="form-table">
-            <tr>
-                <td>
-                    <form action="">
-                        <fieldset>
-                            <legend>
-                                <h3 class="write-to-us">Напишите нам</h3>
-                            </legend>
-                            <table class="input-table">
-                                <tr>
-                                    <td><input class="input" type="text" id="name" required placeholder="Имя"></td>
-                                    <td><input class="input" type="text" id="email" required placeholder="E-mail"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><input class="input-tema" type="text" placeholder="Тема"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><textarea class="textarea" required placeholder="Текст Письма"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="button" type="submit"></td>
-                                    <td><input class="button" type="reset"></td>
-                                </tr>
-                            </table>
-                        </fieldset>
-                    </form>
-                </td>
-                <td class="map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b579da7a2d5bf5c8dfe11e0a4462d9635e467290658b097d300806eaec5a563&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-                </td>
-            </tr>
-        </table>
-        <h3 class="heading">Адрес</h3>
-        <ul class="address">
-            <li>Время работы: с 09:00 до 21:00</li>
-            <li>Телефон: 8(800)225-35-40</li>
-            <li>г. Санкт-Петербург, ул. Пушкина, д. 12</li>
-            <li><a class="E-mail" href="#">analog_pustoti@mail.ru</a></li>
-        </ul>
-    </main>
-    <hr>
-    <footer>
-        <p>&copy;Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
-    </footer>
+    <div class="content">
+        <div class="header">
+            <div class="header_l">
+                <div class="header_logo">
+                    <a class="logo-photo-link" href="index.html"><img src="catalog/img/logo.png" height="62px" alt="logo"></a>
+                </div>
+                <div class="header_menu">
+                    <ul class="header_menu_list">
+                        <li class="header_menu_item">
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="index.html">Главная</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main_page">
+            <div class="mainer">
+                <div class="contact_body">
+                    <div class="contact">
+                        <div class="letter_info">
+                            <div class="message">
+                                <form action="">
+                                    <fieldset>
+                                        <legend>
+                                            <h3 class="write-to-us">Напишите нам</h3>
+                                        </legend>
+                                        <div class="name_mail">
+                                            <div class="name">
+                                                <input class="input" type="text" id="name" required placeholder="Имя">
+                                            </div>
+                                            <div class="mail">
+                                                <input class="input" type="text" id="email" required placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="area">
+                                            <textarea class="textarea" required placeholder="Текст Письма"></textarea>
+                                        </div>
+                                        <div class="buttons">
+                                            <div class="butt_submit">
+                                                <input class="button" type="submit">
+                                            </div>
+                                            <div class="butt_reset">
+                                                <input class="button" type="reset">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="address_form">
+                                <h3 class="heading">Адрес</h3>
+                                <ul class="address">
+                                    <li>Время работы: с 09:00 до 21:00</li>
+                                    <li>Телефон: 8(800)225-35-40</li>
+                                    <li>г. Санкт-Петербург, ул. Пушкина, д. 12</li>
+                                    <li><a class="E-mail" href="#">analog_pustoti@mail.ru</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b579da7a2d5bf5c8dfe11e0a4462d9635e467290658b097d300806eaec5a563&amp;width=100%;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <p>&copy; Все права защищены <a class="geekbrains" href="https:/geekbrains.ru" target="_blank" title="Geekbrains.ru">Geekbrains</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

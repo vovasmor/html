@@ -1,28 +1,38 @@
-/*Фон на страницах*/
 .bg {
     background-color: #f8f8f8;
+    margin: 0;
 }
 
+.content {
+    
+}
+
+
 /*Стиль ссылок*/
-.menu td a,
+.header_menu_list li a,
 .geekbrains,
-.book-link,
-.E-mail {
+a {
     position: relative;
     line-height: 1;
     text-decoration: none;
-    color: #3B83BD;
+    color: #c51d34;
     font: 19px/25px sans-serif;
 }
 
 /*Смена цвета ссылки при наведении*/
-.menu td a:hover,
+.header_menu_list li a:hover,
 a:hover {
-    color: #0b4573;
+    color: #781712;
+}
+
+/*Смена цвета ссылки при нажатии*/
+.header_menu_list li a:active,
+a:active {
+    color: #c51d34;
 }
 
 /*Подчёркивание ссылки при наведении*/
-.menu td a:after,
+.header_menu_list li a:after,
 .geekbrains:after {
     display: block;
     position: absolute;
@@ -30,17 +40,173 @@ a:hover {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #3B83BD;
+    background-color: #c51d34;
     content: "";
     transition: width 0.3s ease-out;
 }
 
 /*Подчёркивание ссылки при наведении полностью*/
-.menu td a:not(.logo-photo-link):hover:after,
-.menu td a:not(.logo-photo-link):focus:after,
+.header_menu_list li a:hover:after,
+.header_menu_list li a:focus:after,
 .geekbrains:hover:after,
 .geekbrains:focus:after {
     width: 100%;
+}
+
+.header {
+    height: 100px;
+    position: relative;
+}
+
+.header_l {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.header_logo {
+    float: left;
+    padding-top: 20px;
+    padding-right: 8px;
+    position: absolute;
+    width: 155px;
+    height: 66px;
+    right: 0;
+}
+
+.header_menu {
+    padding-top: 20px;
+    position: absolute;
+    margin-right: 170px;
+    right: 0;
+}
+
+.header_menu_list {
+    overflow: hidden;
+    padding-left: 0px;
+}
+
+.header_menu_item {
+    display: inline;
+    overflow: hidden;
+    height: 50px;
+    padding-left: 24px;
+}
+
+.header_menu_list li a {
+    font: 25px/31px sans-serif;
+}
+
+.main_page {}
+
+.mainer {
+    background-color: #f8f8f8;
+    position: relative;
+    margin: 0 auto;
+    width: 88%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+.catalog_list {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.books_card {
+    height: 400px;
+    width: 180px;
+    padding-right: 80px;
+    float: left;
+}
+
+.book_photo_link img {
+    width: 180px;
+    height: 290px;
+}
+
+.book_name {
+    height: 38px;
+}
+
+.book_link {
+    font: 14px/20px sans-serif;
+}
+
+.buy {
+    padding-left: 88px;
+    padding-top: 15px;
+}
+
+.buy_button {
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    background-color: #c51d34;
+    font: 25px/31px sans-serif;
+    border-radius: 5px;
+}
+
+.buy_button:hover {
+    background-color: #a2231d;
+}
+
+.buy_button:active {
+    background-color: #c51d34;
+}
+
+.book_photo_link {}
+
+
+
+
+
+
+
+
+.product_main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.product {
+    margin: 40px;
+    height: 100%;
+    width: 80%;
+}
+
+.product_photo_buy {
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.product_buy {
+    position: relative;
+    padding-top: 10px;
+}
+
+.product_photo {}
+
+.product_photo img {
+    height: 450px;
+    box-sizing: border-box;
 }
 
 /*Рамка изображения в разделе просмотра товара*/
@@ -53,18 +219,72 @@ a:hover {
     outline: none;
 }
 
-/*Размер изображения в каталоге*/
-.book-photo-link img {
-    height: 250px;
+.product_info {
+    overflow: hidden;
 }
 
-/*Таблица в каталоге. Изменить.*/
-.catalog-table,
-.catalog-table tr td {
-    height: 100px;
-    width: 150px;
-    border-spacing: 140px 0;
-    vertical-align: top;
+.product_name {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.product_short_desc {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/*Текст краткого описания товара*/
+.short_desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product_properties {
+    height: 100%;
+    overflow: hidden;
+}
+
+.product_props {}
+
+.product_prop {
+    color: #6e6e6e;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.product_title {
+    float: left;
+    width: 140px;
+}
+
+.product_value {}
+
+
+
+/*Первая буква первого слова на странице просмотра товара*/
+.short_desc:first-letter,
+.detailed_desc:first-letter {
+    font-family: "Times New Roman";
+    font-size: 200%;
+}
+
+.product_desc {
+    clear: both;
+}
+
+/*Текст подробного описания товара*/
+.detailed_desc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 /*Заголовки (Краткое описание товара, Характеристики, Подробное описание товара)*/
@@ -75,56 +295,32 @@ a:hover {
     background: #eaeaea;
 }
 
-/*Первая буква первого слова на странице просмотра товара*/
-.short-desc:first-letter,
-.detailed-desc:first-letter {
-    font-family: "Times New Roman";
-    font-size: 200%;
+
+
+
+
+
+
+
+.contact_body {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-/*Текст краткого описания товара*/
-.short-desc {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
+.contact {
+    width: 100%;
 }
 
-/*Текст подробного описания товара*/
-.detailed-desc {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+.letter_info {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-/*На странице просмотра товара в качестве маркеров свое изображение.*/
-.list tr {
-    background: url(catalog/img/faq_list5_2.png) no-repeat 0 4px;
-}
-
-/*Таблица краткого описания товара*/
-.list tr th,
-.list tr td {
-    color: #6e6e6e;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 28px;
-    padding-left: 24px;
-    text-align: left;
-}
-
-/*Таблица с "Напишите нам" и картой*/
-.form-table,
-.form-table tr td {
-    width: 1500px;
-}
-
-/*Расположение карты внутри таблицы*/
-.map {
-    padding-top: 27px;
-    padding-left: 10%;
+.message {
+   float: left;
+    margin-bottom: 60px;
 }
 
 /*При вводе текста в поле Email на странице контактной информации меняет цвет текста и поля*/
@@ -138,12 +334,6 @@ input[type="text"]::placeholder,
 textarea::placeholder {
     color: #484343;
     font: 14px/35px sans-serif;
-}
-
-/*Выравнивает поля формы внутри таблицы*/
-.input-table tr td {
-    height: 50px;
-    text-align: center;
 }
 
 /*Задает стиль для текста и курсора, введенного пользователем внутри полей input и textarea*/
@@ -163,8 +353,8 @@ textarea::placeholder {
 
 /*Задает стиль курсора для кнопок*/
 .button {
+    width: 150px;
     cursor: pointer;
-    
 }
 
 /*Задает ширину и высоту для поля textarea*/
@@ -173,9 +363,44 @@ textarea::placeholder {
     height: 200px;
 }
 
-/*Задает ширину для поля с текстом темы*/
-.input-tema {
-    width: 86%;
+.name_mail {
+
+}
+
+.name {
+    height: 50px;
+    width: 450px;
+}
+
+.mail {
+    overflow: hidden;
+    height: 50px;
+    width: 450px;
+}
+
+.area {
+    
+}
+
+.buttons {
+    
+}
+
+.butt_submit {
+    float: left;
+   
+}
+
+.butt_reset {
+    float: right;
+    padding-right: 44px;
+}
+
+/*Отдельный стиль текста для "Напишите нам"*/
+.write-to-us {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /*Задает стиль для листа с адресом*/
@@ -187,24 +412,35 @@ textarea::placeholder {
     line-height: 28px;
 }
 
-/*Отдельный стиль текста для "Напишите нам"*/
-.write-to-us {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
+.address_form{
+    overflow: hidden;
+    margin-top: 50px;
+    padding-left: 50px;
+    width: 30%;
 }
 
-/*Удалить*/
-
-.table-test,
-.table-test tr th,
-.table-test tr td {
-    border: 1px solid;
-    height: 100px;
-    width: 400px;
-    text-align: center;
+.address li {
+    
 }
 
-.table-test {
-    border-collapse: collapse;
+.map {
+    overflow: hidden;
+    width: 100%;
+    height: 374px;
+    margin-bottom: 60px
+}
+
+
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 66px;
+    text-align: right;
+    color: white;
+    clear: both;
+}
+
+.footer p {
+    padding: 20px;
 }
