@@ -103,61 +103,63 @@ body {
 
 .menu {
     float: right;
-    padding-right: 80px;
+    padding-right: 56px;
 }
 
 .menu-list {
     list-style-type: none;
     float: left;
+
 }
 
 .menu-link {
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px 13px;
-    width: 25%
+    width: 25%;
+    letter-spacing: 1.4px;
 }
 
 .menu-link-active {
     color: #212121;
     font-weight: 700;
     letter-spacing: 1.4px;
-}  
+}
 
 .two:hover ~ hr {
-  margin-left: 15%;
+    margin-left: 15%;
     width: 19%;
 }
 
 .three:hover ~ hr {
-  margin-left: 35%;
+    margin-left: 35%;
     width: 16%;
 }
 
 .four:hover ~ hr {
-  margin-left: 52%;
+    margin-left: 52%;
     width: 20%;
 }
 
 .five:hover ~ hr {
-  margin-left: 74%;
+    margin-left: 74%;
     width: 16%;
 }
 
 hr {
-  height: 3px;
-  width: 14%;
-  margin: 0;
-  background: #212121;
-  border: none;
-  transition: .3s ease-in-out;
+    height: 3px;
+    width: 14%;
+    margin: 0;
+    background: #212121;
+    border: none;
+    transition: .3s ease-in-out;
 }
 
 .slider-text {
-    padding-top: 283px;
+    padding-top: 276px;
 }
 
 .slider-trending {
@@ -165,6 +167,7 @@ hr {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1.8px;
 }
 
 .slider-h2 {
@@ -180,7 +183,7 @@ hr {
     font-weight: 300;
     padding-top: 15px;
     margin-bottom: 25px;
-    width: 458px;
+    width: 469px;
     line-height: 24px
 }
 
@@ -193,7 +196,7 @@ hr {
     width: 212px;
     height: 45px;
     text-align: center;
-    line-height: 45px;
+    line-height: 47px;
     text-decoration: none;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
@@ -208,7 +211,7 @@ hr {
 .pagination {
     position: absolute;
     width: 1170px;
-    bottom: 19px;
+    bottom: 17px;
     text-align: center;
 }
 
@@ -218,7 +221,7 @@ hr {
     border-radius: 50%;
     background-color: #c7c7c7;
     display: inline-block;
-    margin: 4px;
+    margin: 4px 3px;
 }
 
 .circle-active {
@@ -239,7 +242,7 @@ hr {
 }
 
 .pro4-featured-head {
-    padding-top: 120px;
+    padding-top: 113px;
 }
 
 .featured {
@@ -256,7 +259,7 @@ hr {
     font-weight: 700;
     text-decoration: none;
     border-bottom: 1px solid #6c6c6c;
-    padding: 21px 20px;
+    padding: 10px 14px;
 }
 
 .pro4-link-active {
@@ -264,7 +267,7 @@ hr {
     font-size: 36px;
     font-weight: 700;
     border-bottom: 3px solid #212121;
-    padding: 19px 20px;
+    padding: 8px 8px;
 }
 
 .explore-link {
@@ -274,13 +277,13 @@ hr {
     text-transform: uppercase;
     text-decoration: none;
     float: right;
-    padding-top: 16px;
-    letter-spacing: 3.6px;
+    padding-top: 20px;
+    letter-spacing: 3.2px;
 }
 
 .pro4-products {
-    padding-top: 72px;
-    padding-bottom: 120px;
+    padding-top: 62px;
+    padding-bottom: 116px;
 }
 
 .pro4-products-link {
@@ -314,7 +317,7 @@ pro4-products-photo {
 }
 
 .promo-text {
-    padding-top: 228px;
+    padding-top: 223px;
     padding-left: 50px;
 }
 
@@ -330,6 +333,7 @@ pro4-products-photo {
     color: #212121;
     font-size: 36px;
     font-weight: 700;
+    padding-top: 7px;
 }
 
 .promo-content {
@@ -337,8 +341,8 @@ pro4-products-photo {
     font-size: 14px;
     font-weight: 300;
     width: 385px;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 27px;
     line-height: 24px;
 }
 
@@ -347,7 +351,7 @@ pro4-products-photo {
 /**trending**/
 
 .trending-head {
-    padding-top: 120px;
+    padding-top: 113px;
 }
 
 .trending {
@@ -358,17 +362,17 @@ pro4-products-photo {
 }
 
 .trending-products {
-    padding-top: 64px;
-    padding-bottom: 120px;
+    padding-top: 37px;
+    padding-bottom: 116px;
 }
 
 .trending-product {
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .trending-product-end {
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 /**end of trending**/
@@ -382,7 +386,7 @@ pro4-products-photo {
 }
 
 .hot-deal-text {
-    padding-top: 287px;
+    padding-top: 283px;
 }
 
 .hot-deal {
@@ -396,7 +400,7 @@ pro4-products-photo {
 .hot-deal-h2 {
     color: #212121;
     font-size: 62px;
-    font-weight: 400;
+    font-weight: 100;
     text-transform: uppercase;
 }
 
@@ -404,8 +408,8 @@ pro4-products-photo {
     color: #6c6c6c;
     font-size: 14px;
     font-weight: 300;
-    width: 458px;
-    padding-top: 25px;
+    width: 468px;
+    padding-top: 13px;
     padding-bottom: 25px;
     line-height: 24px;
 }
@@ -428,7 +432,7 @@ pro4-products-photo {
 }
 
 .sm-text {
-    padding-top: 186px;
+    padding-top: 182px;
     padding-left: 30px;
 }
 
@@ -444,6 +448,7 @@ pro4-products-photo {
     color: #212121;
     font-size: 36px;
     font-weight: 700;
+    padding-top: 6px;
 }
 
 .sm-content {
@@ -451,8 +456,8 @@ pro4-products-photo {
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 28px;
     width: 340px;
 
 }
@@ -479,7 +484,7 @@ pro4-products-photo {
 }
 
 .mobile-text {
-    padding-top: 125px;
+    padding-top: 120px;
 }
 
 .mobile-app {
@@ -492,7 +497,7 @@ pro4-products-photo {
 
 .mobile-h2 {
     color: #212121;
-    font-size: 62px;
+    font-size: 58px;
     font-weight: 100;
     text-transform: uppercase;
     width: 487px;
@@ -503,8 +508,8 @@ pro4-products-photo {
     color: #6c6c6c;
     font-size: 22px;
     font-weight: 300;
-    padding-top: 25px;
-    padding-bottom: 35px;
+    padding-top: 12px;
+    padding-bottom: 30px;
 }
 
 .app-store {
@@ -558,53 +563,56 @@ pro4-products-photo {
 }
 
 .contact-us {
-    padding-top: 120px;
+    padding-top: 116px;
     float: left;
-    padding-right: 80px;
+    padding-right: 75px;
 }
 
 .address {
     width: 225px;
     line-height: 22px;
-    padding-top: 18px;
+    padding-top: 14px;
 }
 
 .mail {
     width: 221px;
     line-height: 22px;
-    padding-top: 18px;
+    padding-top: 23px;
 }
 
 .useful-information {
-    padding-top: 120px;
+    padding-top: 116px;
     float: left;
-    padding-right: 80px;
+    padding-right: 65px;
 }
 
 .useful-left {
     float: left;
     width: 140px;
-    padding-right: 103px;
+    padding-right: 95px;
     line-height: 26px;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .useful-right {
     width: 200px;
     line-height: 26px;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .lets-stay {
-    padding-top: 120px;
+    padding-top: 116px;
     overflow: hidden;
 }
 
 .lets-stay-content {
-    padding-top: 18px;
+    padding-top: 15px;
     line-height: 22px;
-    padding-bottom: 26px;
+    padding-bottom: 22px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .contact-form {
@@ -614,8 +622,8 @@ pro4-products-photo {
 }
 
 .contact-form-input {
-    width: 250px;
-    height: 48px;
+    width: 299px;
+    height: 46px;
     padding-left: 19px;
     border: 1px solid #d9dee1;
     background-color: #ffffff;
@@ -628,8 +636,8 @@ pro4-products-photo {
 
 .contact-form-btn {
     float: right;
-    padding: 15px;
     cursor: pointer;
+    padding: 12px 13px;
 }
 
 .icon-paper-plane:before {
@@ -640,8 +648,8 @@ pro4-products-photo {
 
 .copy {
     clear: both;
-    padding-top: 69px;
-    padding-bottom: 60px;
+    padding-top: 66px;
+    padding-bottom: 56px;
     position: relative;
 }
 
@@ -669,7 +677,6 @@ pro4-products-photo {
     border-radius: 50%;
     background-color: #6c6c6c;
     display: inline-block;
-    margin: 2px;
     text-align: left;
 }
 
