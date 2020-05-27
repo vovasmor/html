@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-side {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+.flex-dis {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/**header**/
+
+.header {
+    padding-top: 63px;
+}
+
+.page-header {
+    height: 360px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.menu {
+    float: right;
+    padding-right: 56px;
+}
+
+.menu-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-link {
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 13px;
+    width: 25%;
+    letter-spacing: 1.4px;
+}
+
+.menu-link-active {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.two:hover ~ hr {
+    margin-left: 14%;
+    width: 19%;
+}
+
+.three:hover ~ hr {
+    margin-left: 34%;
+    width: 16%;
+}
+
+.four:hover ~ hr {
+    margin-left: 52%;
+    width: 20%;
+}
+
+.five:hover ~ hr {
+    margin-left: 74%;
+    width: 16%;
+}
+
+hr {
+    height: 3px;
+    width: 14%;
+    margin: 0;
+    background: #212121;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.header-h2 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    padding-top: 151px;
+}
+
+.catalog-header {
+    padding-top: 67px;
+}
+
+.catalog-list {
+    list-style-type: none;
+    float: left;
+}
+
+.catalog-link {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.catalog-link-left {
+    padding-left: 9px;
+}
+
+.catalog-link-active {
+    color: #212121;
+}
