@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +26,11 @@ body {
 }
 
 .flex-dis {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -56,6 +67,7 @@ body {
     text-align: center;
     line-height: 45px;
     text-decoration: none;
+    -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
     background-color: #ffffff;
@@ -155,7 +167,11 @@ hr {
     margin: 0;
     background: #212121;
     border: none;
-    transition: .3s ease-in-out;
+    -ms-transition: .0s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    float: left;
 }
 
 .slider-text {
@@ -198,6 +214,7 @@ hr {
     text-align: center;
     line-height: 47px;
     text-decoration: none;
+    -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
     background-color: #ffffff;
@@ -205,10 +222,12 @@ hr {
 }
 
 .button:hover {
+    -webkit-box-shadow: 0 3px 6px 2px rgba(33, 33, 33, 0.35);
     box-shadow: 0 3px 6px 2px rgba(33, 33, 33, 0.35);
 }
 
 .button:active {
+    -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
 }
 

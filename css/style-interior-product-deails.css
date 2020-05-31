@@ -19,8 +19,12 @@ body {
 }
 
 .flex-dis {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .container {
@@ -92,7 +96,11 @@ hr {
     margin: 0;
     background: #212121;
     border: none;
-    transition: .3s ease-in-out;
+    -ms-transition: .0s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    float: left;
 }
 
 /**end of header**/
@@ -225,7 +233,8 @@ opacity: 0.2;
     height: 71px;
     line-height: 71px;
     text-decoration: none;
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+            box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 35px;
     background-color: #f44336;
     letter-spacing: 4.4px;
@@ -233,11 +242,13 @@ opacity: 0.2;
 }
 
 .product-btn:hover {
-    box-shadow: 0 3px 6px 2px rgba(33, 33, 33, 0.35);
+    -webkit-box-shadow: 0 3px 6px 2px rgba(33, 33, 33, 0.35);
+            box-shadow: 0 3px 6px 2px rgba(33, 33, 33, 0.35);
 }
 
 .product-btn:active {
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+            box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
 }
 
 .button-arrow {
